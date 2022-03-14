@@ -1,0 +1,45 @@
+/* This is the JN Family's custom override of Bootstrap CSS styles           */
+
+/* Override body background to be dark navy blue and font to be white        */
+body
+{
+    color: #fff; 
+    background-color: #000120;
+    text-align: left;
+}
+
+/* Make headers all center-aligned. Bootstrap headers have no padding before */
+/* the header, which I don't like. Add some padding back in the top margin.  */
+h1, h2, h3, h4, h5, h6 
+{
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+/* Make leading paragraph text center-aligned                                */
+p.lead
+{
+    text-align: center;
+}
+
+/* Define tables with smaller font size and more padding                     */
+.jnftable
+{
+  font-size: 0.85em;
+  vertical-align: center;
+  padding: 1em 1em;
+}
+
+/* Define table header rows with centered and bold column names              */
+.jnftable thead
+{
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Make horizontal rules thicker and white color                             */
+hr 
+{
+    height: 5;
+    color:#fff
+}

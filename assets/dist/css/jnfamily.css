@@ -1,10 +1,10 @@
 /* This is the JN Family's custom override of Bootstrap CSS styles           */
 
-/* Override body background to be dark navy blue and font to be white        */
+/* Override body background to be a slate color and font to be white         */
 body
 {
-    color: #fff; 
-    background-color: #000120;
+    color: white; 
+    background-color: #1f324b;
     text-align: left;
 }
 
@@ -22,12 +22,13 @@ p.lead
     text-align: center;
 }
 
-/* Define tables with smaller font size and more padding                     */
+/* Define tables with smaller font size, more padding, white borders         */
 .jnftable
 {
   font-size: 0.85em;
   vertical-align: center;
   padding: 1em 1em;
+  border: white;
 }
 
 /* Define table header rows with centered and bold column names              */
@@ -41,5 +42,28 @@ p.lead
 hr 
 {
     height: 5;
-    color:#fff
+    color: white;
+}
+
+/* Override dropdown menus to use transparent background instead of white    */
+.dropdown-menu
+{
+  background-color: transparent;
+}
+
+/* Override general links to use a different color than bright medium blue   */
+a 
+{
+  color: cornflowerblue;
+}
+
+a:hover
+{
+  color: royalblue;
+}
+
+/* Override links in the dropdown menus to use white font instead of black   */
+.dropdown-menu li a
+{
+  color: white;
 }

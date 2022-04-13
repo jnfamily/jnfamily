@@ -67,3 +67,12 @@ a:hover
 {
   color: white;
 }
+
+/* Define paragraph style that can be used to note the author of a web page  */
+.jnfpageauthor
+{
+  text-align: center;
+  font-size: 0.85em;
+  color: $gray-600;
+  font-style: italic;
+}

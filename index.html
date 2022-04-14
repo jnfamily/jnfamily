@@ -9,9 +9,9 @@
     <title>JN Family Home</title>
     
     <!-- Bootstrap CSSs and JN Family's custom override CSS -->
-    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/dist/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="assets/dist/css/jnfamily.css">
+    <link rel="stylesheet" href="/assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="/assets/dist/css/jnfamily.css">
 
     <style>
       .bd-placeholder-img {
@@ -29,8 +29,8 @@
       }
     </style>
 
-    <script src="assets/dist/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/dist/js/jquery-3.6.0.min.js"></script>
+    <script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
 
   </head>
 
@@ -42,37 +42,68 @@
 
     <script>
       $(function () {
-        $("#nav-placeholder").load("navigation-sidebar.html");
+        $("#nav-placeholder").load("/navigation-sidebar.html");
       });
     </script>
     <!-- End placeholder to load navigation sidebar -->
 
     <main>
-  
-      <div style="text-align: center">
-        <h1>Welcome family and friends!</h1>
+      <div class="container">
+        <div style="text-align: center">
+          <h1>Welcome family and friends!</h1>
+          <p class="lead">
+            The J's keep us on our feet and in motion all the time (not always voluntarily, haha). We hope you can join us on some of our excursions :)
+          </p>
+          <p class="fst-italic">
+            "Life is like riding a bicycle.<br>
+            In order to keep balance you must keep moving."<br>
+            - Einstein
+          </p>
+    
+        </div>
+    
+        <hr>
+    
         <p class="lead">
-          The J's keep us on our feet and in motion all the time (not always voluntarily, haha). We hope you can join us on some of our excursions :)
-        </p>              
-        <p class="fst-italic">
-          "Life is like riding a bicycle.<br>
-          In order to keep balance you must keep moving."<br>
-          - Einstein
+          <a href="/biking-fun.html">Biking Fun</a><br>
+          <a href="/camping-fun.html">Camping Fun</a><br>
+          <a href="/eating-fun.html">Eating Fun</a><br>
+          <a href="/soccer-fun.html">Soccer Fun</a><br>
+          <a href="/skiing-fun.html">Skiing Fun</a><br>
         </p>
-
+    
       </div>
-        
-      <hr>
-    
-      <p class="lead">
-        <a href="biking-fun.html">Biking Fun</a><br>
-        <a href="camping-fun.html">Camping Fun</a><br>
-        <a href="eating-fun.html">Eating Fun</a><br>
-        <a href="soccer-fun.html">Soccer Fun</a><br>
-        <a href="skiing-fun.html">Skiing Fun</a><br>
-      </p>
-    
     </main>
+ 
+    <footer class="footer fixed-bottom text-center" 
+    style="background-image: url('/images/Mammoth Lakes - Lakes Basin Bike Path (Bottom Portion).jpg'); 
+    background-size: cover; background-color: rgba(48, 118, 209, 0.285)">
+      <div class="container-fluid mask" style="background-color: rgba(40, 40, 40, 0.6);">
+        <hr>
+        <a href="mailto:jnparents@gmail.com">Contact Us</a><br>
+        <br>
+        <p class="fst-italic" style="color:darkgrey">
+          <script>
+          document.write("Page last modified: " + document.lastModified + "");
+          </script>
+        </p>
+      </div>
+    </footer>        
+
     
+    <!-- Placeholder to load page footer -->
+<!--
+    <div id="footer-placeholder">
+    </div>
+
+    <script>
+      $(function () {
+        $("#footer-placeholder").load("/page-footer.html");
+      });
+    </script>
+  -->    
+    <!-- End placeholder to load page footer -->
+  
+
   </body>
 </html>
